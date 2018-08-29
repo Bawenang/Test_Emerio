@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/dokter_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@android:drawable/ic_dialog_info" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/dokter_photo"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/list_item_margin_left">
+
+        <TextView
+            android:id="@+id/dokter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name "
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dokter_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area "
+            android:layout_below="@id/dokter_name"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/dokter_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type "
+            android:layout_below="@id/dokter_area"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/dokter_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price "
+            android:layout_below="@id/dokter_type"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
