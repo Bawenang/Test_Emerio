@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bawe.test_emerio.Activities.MainActivity">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:ems="10" />
+
+    <ListView
+        android:id="@+id/location_list"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_size"
+        android:layout_below="@id/auto_search"
+        android:listSelector="@drawable/list_item"></ListView>
+
+    <Button
+        android:id="@+id/find_location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_list"
+        android:text="Find..."
+        android:layout_alignParentRight="true"
+        android:onClick="onFindButton"/>
+
+</RelativeLayout>
